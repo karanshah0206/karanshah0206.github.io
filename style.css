@@ -1,18 +1,4 @@
 * {
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: black;
-}
-
-img {
-    display: block;
-    height: 100vh;
-}
-
-@media screen and (max-width: 900px) {
-    img {
-        height: auto;
-        width: 100vw;
-    }
 }
