@@ -1,18 +1,27 @@
 * {
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: black;
 }
 
-img {
-    display: block;
-    height: 100vh;
+body {
+    height: 200vh;
 }
 
-@media screen and (max-width: 900px) {
-    img {
-        height: auto;
-        width: 100vw;
-    }
+::-webkit-scrollbar {
+    width: 10px;
 }
+  
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
