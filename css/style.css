@@ -25,5 +25,22 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: #555;
+}
+
+/* Homepage */
+#main_web:hover {
+    color: rgb(0, 139, 139);
+}
+
+#main_win:hover {
+    color: rgb(0, 120, 215);
+}
+
+#main_and:hover {
+    color: rgb(166, 206, 57);
+}
+
+#main_con:hover {
+    color: rgb(218, 165, 32);
 }
