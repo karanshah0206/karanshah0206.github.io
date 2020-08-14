@@ -6,6 +6,7 @@
     --mainText: #000000;
     --secondaryText: #4b5156;
     --borderColor: #c1c1c1;
+    --themeDotBorder: #24292e;
 }
 
 html, body {
@@ -78,7 +79,6 @@ p, li, span, label, input, textarea {
     box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3em 20em;
     grid-template-areas: "nav-wrapper nav-wrapper" "left-column right-column";
 }
 
@@ -112,14 +112,6 @@ p, li, span, label, input, textarea {
 #dot-yellow { background-color: #fec02f; }
 #dot-green { background-color: #2aca3e; }
 
-.left-column {
-    grid-area: left-column;
-}
-
-.right-column {
-    grid-area: right-column;
-}
-
 #navigation {
     margin: 0;
     padding: 10px;
@@ -128,4 +120,61 @@ p, li, span, label, input, textarea {
 #navigation li {
     display: inline-block;
     margin: 0 5px;
+}
+
+.left-column {
+    grid-area: left-column;
+    padding: 50px 0;
+}
+
+.left-column h5 {
+    text-align: center;
+    line-height: 0;
+}
+
+#profile_pic {
+    display: block;
+    margin: 0 auto;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border: 2px solid var(--borderColor);
+}
+
+#theme-options-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.theme-dot {
+    height: 30px;
+    width: 30px;
+    border: 2px solid var(--themeDotBorder);
+    border-radius: 50%;
+    background-color: #000000;
+    margin: 5px;
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}
+.theme-dot:hover {
+    -webkit-box-shadow: -3  px 3px 3px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -3px 3px 3px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: -3px 3px 3px -1px rgba(0, 0, 0, 0.75);
+}
+
+#light-mode { background-color: #ffffff; }
+#blue-mode { background-color: #192734; }
+#green-mode { background-color: #78866b; }
+#purple-mode { background-color: #7e4c7e; }
+
+#settings-note {
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+}
+
+.right-column {
+    grid-area: right-column;
 }
