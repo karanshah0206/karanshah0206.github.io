@@ -8,7 +8,7 @@
     --borderColor: #c1c1c1;
 }
 
-* {
+html, body {
     margin: 0;
     padding: 0;
 }
@@ -30,9 +30,9 @@ ul {
 }
 
 h1, h2, h3, h4, h5, h6, strong {
-
     font-family: 'Russo One', sans-serif;
     color: var(--mainText);
+    font-weight: 500;
 }
 
 p, li, span, label, input, textarea {
@@ -60,4 +60,11 @@ p, li, span, label, input, textarea {
     .main-container {
         width: 95%;
     }
+}
+
+.greeting-wrapper {
+    display: grid;
+    text-align: center;
+    align-content: center;
+    min-height: 10em;
 }
