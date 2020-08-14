@@ -236,3 +236,15 @@ p, li, span, label, input, textarea {
         justify-content: center;
     }
 }
+
+.about-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    padding: 50px 0;
+}
+
+#skills {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--previewShadowBackground);
+}
