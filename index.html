@@ -125,7 +125,14 @@
     <!-- Contact -->
     <section class="s2">
         <div class="main-container">
-            
+            <h3 style="text-align: center;">Get In Touch!</h3>
+            <form id="contact-form">
+                <input class="input-field" type="text" placeholder="Your Name" name="name" required>
+                <input class="input-field" type="text" placeholder="Subject" name="subject" required>
+                <input class="input-field" type="email" placeholder="Your Email" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
+                <textarea class="input-field" name="message"></textarea>
+                <input type="submit" value="Send" id="submit-btn">
+            </form>
         </div>
     </section>
 </body>
