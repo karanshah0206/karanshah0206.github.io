@@ -7,6 +7,7 @@
     <title>Karan Shah</title>
 
     <link rel="stylesheet" href="./styles/style.css">
+    <link id="theme-style" rel="stylesheet" href="">
 </head>
 <body>
     <!-- Splash -->
@@ -30,10 +31,10 @@
                     <img id="profile_pic" src="./images/profile.jpg">
                     <h5>Personalize Theme</h5>
                     <div id="theme-options-wrapper">
-                        <div id="light-mode" class="theme-dot"></div>
-                        <div id="blue-mode" class="theme-dot"></div>
-                        <div id="green-mode" class="theme-dot"></div>
-                        <div id="purple-mode" class="theme-dot"></div>
+                        <div id="light-mode" class="theme-dot" onclick="themeLight();"></div>
+                        <div id="blue-mode" class="theme-dot" onclick="themeBlue();"></div>
+                        <div id="green-mode" class="theme-dot" onclick="themeGreen();"></div>
+                        <div id="purple-mode" class="theme-dot" onclick="themePurple();"></div>
                     </div>
                     <p id="settings-note">Theme saved for your next visit.</p>
                 </div>
@@ -95,7 +96,7 @@
                         <div class="post-preview">
                             <h6 class="post-title">Type To Write</h6>
                             <p class="post-intro">Describe your post. Keep describing!</p>
-                            <a href="#" target="_blank">Read More</a>
+                            <a href="#" target="">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -105,7 +106,7 @@
                         <div class="post-preview">
                             <h6 class="post-title">Type To Write</h6>
                             <p class="post-intro">Describe your post. Keep describing!</p>
-                            <a href="#" target="_blank">Read More</a>
+                            <a href="#" target="">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -115,7 +116,7 @@
                         <div class="post-preview">
                             <h6 class="post-title">Type To Write</h6>
                             <p class="post-intro">Describe your post. Keep describing!</p>
-                            <a href="#" target="_blank">Read More</a>
+                            <a href="#" target="">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -135,5 +136,6 @@
             </form>
         </div>
     </section>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>

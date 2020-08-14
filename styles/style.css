@@ -17,6 +17,10 @@ html, body {
     padding: 0;
 }
 
+body * {
+    transition: 0.3s;
+}
+
 h1 { font-size: 56px; }
 h2 { font-size: 36px; }
 h3 { font-size: 28px; }
@@ -310,7 +314,7 @@ p, li, span, label, input, textarea {
 
 .input-field {
     width: 100%;
-    padding: 10px 5px;
+    padding: 10px 0px;
     background-color: var(--secondaryColor);
     border-radius: 5px;
     border: 1px solid var(--borderColor);
